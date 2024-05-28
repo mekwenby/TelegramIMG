@@ -117,7 +117,7 @@ func main() {
 				}
 				// 图片报错路径
 				imgSavePath := path.Join(downloadDir, title, imgFileName)
-				fmt.Printf("开始下载#%d: %v%s\n", index, host, imgUrl)
+				fmt.Printf("开始下载#%d: %v\n", index, imgUrl)
 				wg.Add(1)
 				go download(imgUrl, imgSavePath)
 
